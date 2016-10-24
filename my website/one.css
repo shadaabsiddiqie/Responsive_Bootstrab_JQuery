@@ -1,0 +1,302 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image:url("http://res.cloudinary.com/namanb17/image/upload/v1475758601/crossword_usiurg.png");
+    font-family: 'Raleway', sans-serif;
+}
+button{
+    background-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1.5px;
+    border-color: #742222;
+    color: black;
+    padding: 5px;
+}
+button:hover{
+    background-color: #742222;
+    color: white;
+}
+.top{
+
+    height: 70px;
+    width: 70px;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1px;
+    position: fixed;
+    background-image: url("http://www.freeiconspng.com/uploads/arrow-up-icon-20.png");
+    background-size: 100% 100%;
+    background-position: center;
+
+}
+.index-box{
+    position: relative;
+    height: 500px;
+    background-image: url("http://res.cloudinary.com/namanb17/image/upload/v1472845686/photo-1432821596592-e2c18b78144f_iqaozo.jpg");
+    background-size: 100% 500px;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.logo{
+        height: 100px;
+        width: 100%;
+        /*background-color: rgba(255,0,0,0.5);*/
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 40%;
+        margin-top: -50px;
+        text-align: center;
+}
+.logo .title{
+    font-size:5.5em ;
+}
+.logo .subtitle{
+    font-size: 2em;
+}
+.fore-image{
+  width: 360px;
+  height: 133px;
+  background-color: rgba(0,0,0,0.3);
+  background-image: url("http://res.cloudinary.com/namanb17/image/upload/v1472845923/Resolutions-Upto-2400-dpi-_HD_Quality_ae9wa3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position:absolute ;
+  left:0px;
+  top: 0px;
+}
+.intro{
+    margin: 100px auto;
+    text-align: center;
+}
+.intro h1{
+    font-family: 'Dancing Script', cursive;
+}
+.content{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.content-pic{
+    text-align: center;
+    /*background-color: red;*/
+    /*position: relative;*/
+    width: 100%;
+    float: left;
+    /*height: 100%;*/
+    /*height: 100%s;*/
+    /*position: absolute;*/
+    /*height: 100px;*/
+    /*margin:0px auto;*/
+    /*margin-left: 100px;*/
+    margin-bottom: 100px;
+    /*left:50%;*/
+    /*transform: translate(-50%, -50%);*/
+
+}
+/*//.pic-web,.pic-design,.pic-team,.pic-E*/
+.content-pic div
+{
+    /*position: relative;*/
+    width: 300px;
+    /*height: 300px;*/
+    /*background-color: gray;*/
+    background-size: 100% 100%;
+    margin: 10px 10px;
+    float:left;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #383F74 ;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+.content-pic div img{
+    /*position: absolute;*/
+    /*height: 150px;*/
+    display: block;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+.content-pic div.is-showing{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.content-pic div:hover img{
+      transform: scale(1.1);
+}
+.content-pic div a{
+    color: black;
+    text-decoration: none;
+}
+.content-pic div:hover h3{
+    color:  #3947B1;
+}
+.content-pic div:hover hr{
+    box-shadow: 0 0 10px 1px black;
+}
+/*#web-dev-cont,#design-cont,#team-cont,#E-cont{
+    padding:10px 0px;
+}*/
+/*.thumbnail .img{
+    height: 350px;
+    width: 250px;
+}*/
+/*.breaf{
+margin-bottom: 100px;
+}
+#web-dev-cont,#design-cont,#team-cont,#E-cont{
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #383F74 ;
+    /*background-color: red;*/
+    /*float: left;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+}
+#web-dev-cont div,#design-cont div,#team-cont div,#E-cont div{
+    float: left;
+}
+#web-dev-cont .image {
+background-image: url("http://res.cloudinary.com/namanb17/image/upload/v1473018924/1473036642_free-15_uugbnr.ico");
+}
+#design-cont .image{
+    background-image: url("http://res.cloudinary.com/namanb17/image/upload/v1473018930/1473036732_construction_project_plan_building_architect_design_develop-62_cg3dyb.ico");
+}
+#team-cont .image{
+    background-image: url("http://res.cloudinary.com/namanb17/image/upload/v1473018929/1473036803_cmyk-07_bbnyoe.ico");
+}
+#E-cont .image{
+    background-image: url("http://res.cloudinary.com/namanb17/image/upload/v1473021565/1473039549_Cart_cqld4x.ico");
+}
+#web-dev-cont .image ,#design-cont .image,#team-cont .image,#E-cont .image{
+    /*background-color: blue;*/
+    /*width: 300px;
+    height: 300px;
+    position: relative;
+    background-position: 100px 0px;
+    background-size: 300px 300px;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+#web-dev-cont .image-content,#design-cont .image-content,#team-cont .image-content,#E-cont .image-content{
+    margin-top: 40px;
+    width: 50%;
+    height: 100%;
+    text-align: right;
+    margin-left: 0px;
+
+}*/
+.blog-posts{
+    margin-top: 100px;
+
+}
+.blog-posts .post {
+    border: 1px solid #e1e1e1;
+    padding: 20px 20px 0;
+    background: white;
+    position: relative;
+}
+.post-1{
+  transform: translate(100px, 20px);
+}
+.post-2{
+  z-index: 2;
+}
+.post-3{
+  transform: translate(-100px, 20px);
+}
+#contact{
+    width : 100%;
+    font-size: 1em;
+    background-image: url("http://in.bmscdn.com/webin/static/contact-us/contact-us-banner.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: white;
+}
+.fill-hed, .conct-head {
+    font-size: 22px;
+    font-family: nexa;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 22px;
+}
+.fill form input {
+    width: 75%;
+    height: 34px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: nexa;
+    border-radius: 7px;
+}
+input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+input:not([type]), input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
+    padding: 1px 0px;
+}
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 12.6667px Arial;
+}
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+textarea[name="texta"] {
+    width: 75%;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: nexa;
+    border-radius: 7px;
+    padding-top: 5px;
+}
+textarea {
+    -webkit-appearance: textarea;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    flex-direction: column;
+    resize: auto;
+    cursor: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+    padding: 2px;
+}
